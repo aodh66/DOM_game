@@ -1,0 +1,134 @@
+body {
+  background-color: var(--bs-dark);
+}
+
+.screen-too-small {
+  /* z-index: 1; */
+  padding: 1em;
+    display: none;
+}
+
+.game-win-loss {
+  justify-self: center;
+  font-size: 2em;
+  padding: 15%;
+  /* display: none; */
+}
+
+.invisible {
+  display: none;
+}
+
+.column {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container {
+  /* height: 50vw; */
+  margin-left: 0;
+  margin-right: 0;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 50%;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  background-image: url(../images/waterbg.webp);
+  background-position: center;
+  background-size: cover;
+  border: 3px solid var(--bs-secondary);
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+  min-width: 50%;
+  align-self: center;
+}
+
+.grid-square {
+  background-color: transparent;
+  border: 1px solid var(--bs-dark-border-subtle);
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 10px;
+}
+
+/* DEBUG - Turn on to see AI ships */
+/* .ship {
+        background-color: lightblue;
+        } */
+
+.selected {
+  background-image: url(../images/splash.svg);
+}
+
+.ship.ship-visible {
+  background-image: url(../images/ship.svg);
+  background-color: transparent;
+}
+
+.ship.selected {
+  background-image: url(../images/shiphit.svg);
+}
+
+.game-over {
+  justify-self: center;
+  text-align: center;
+  font-size: 2em;
+  align-self: center;
+  text-wrap: nowrap;
+  border-radius: 10px;
+  padding: 20%;
+  grid-column-start: 5;
+}
+
+.btncontainer {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+}
+
+.instructions {
+  justify-self: center;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+@media (max-width: 599px) {
+  .container {
+    display: none;
+  }
+
+  .screen-too-small {
+    display: block;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .column {
+    /* min-width: 100%;   */
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .instructions {
+    column-span: 2;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Your styles here */
+}

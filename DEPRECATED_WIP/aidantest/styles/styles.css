@@ -1,0 +1,60 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    height:60vh;
+    width: 40vw;
+    padding: 1em;
+    gap: 10px;
+    background-color: green;
+    /* margin: 5em; */
+    border-radius: 10px;
+    background-size: 100% 100%;
+background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #2CFF00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #072609FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #934E1BFF 0%, #351808FF 100%);
+display: flex;
+flex-wrap: wrap;
+gap: 2%;
+}
+
+.tile {
+    background-color: hsl(0, 0%, 68%);
+    border: 1px solid hsl(0, 0%, 0%);
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 2px 0px 5px hsla(0, 0%, 0%, 1);
+    /* max-width: 50%; */
+    /* max-height: 50%; */
+}
+
+.backboard {
+    padding: 2em;
+    background-color: hsl(0, 0%, 20%);
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: grey;
+}
+
+.square {
+    min-width: 8%;
+    background-color: hsl(240, 49%, 55%);
+    height: 8%;
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 10px;
+    box-shadow: 2px 0px 5px hsla(0, 0%, 0%, 1);
+}
+
+.ship {
+    background-color: red;
+}
+
+.shot {
+    background-color: grey;
+}
+/* .square:nth-child(10n) {
+    flex-basis: 100%;
+} */

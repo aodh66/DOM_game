@@ -1,0 +1,121 @@
+.div-grids{
+    display: flex;
+    flex-direction: row;
+}
+
+.panel {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-host{
+    width: 400px;
+    height: 400px;
+    min-width: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(46, 113, 139);
+    margin: 20px;
+}
+
+
+.grid div{
+    width: 40px;
+    height: 40px;
+}
+
+.ships-container{
+    width: 220px;
+    min-width: 220px;
+    height: 400px;
+    background-color: slateblue;
+    margin: 20px;
+    overflow-y: scroll;
+}
+
+.destroyer-container{
+    width: 80px;
+    height: 40px;
+    background-color: whitesmoke;
+    display: flex;
+    margin: 5px;
+}
+.destroyer-container-vertical{
+    width: 40px;
+    height: 80px;
+    background-color: whitesmoke;
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+.submarine-container{
+    width: 120px;
+    height: 40px;
+    background-color: whitesmoke;
+    display: flex;
+    margin: 5px;
+}
+.submarine-container-vertical{
+    width: 40px;
+    height: 120px;
+    background-color: whitesmoke;
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+.cruiser-container{
+    width: 120px;
+    height: 40px;
+    background-color: whitesmoke;
+    display: flex;
+    margin: 5px;
+}
+.cruiser-container-vertical{
+    width: 40px;
+    height: 120px;
+    background-color: whitesmoke;
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+.battleship-container{
+    width: 160px;
+    height: 40px;
+    background-color: whitesmoke;
+    display: flex;
+    margin: 5px;
+}
+.battleship-container-vertical{
+    width: 40px;
+    height: 160px;
+    background-color: whitesmoke;
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+.carrier-container{
+    width: 200px;
+    height: 40px;
+    background-color: whitesmoke;
+    display: flex;
+    margin: 5px;
+}
+.carrier-container-vertical{
+    width: 40px;
+    height: 200px;
+    background-color: whitesmoke;
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+.ship div{
+    width: 40px;
+    height: 40px;
+}
+.ship{
+   
+    background-color: whitesmoke;
+}
+
