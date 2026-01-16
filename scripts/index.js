@@ -156,6 +156,15 @@ nextTurnBtn.addEventListener("click", () => {
   }
 });
 
+document.addEventListener("keydown", (event) => {
+  // Space can be detected via event.code or event.key
+  if (event.code === "Space" || event.key === " ") {
+    event.preventDefault(); // stops page scrolling
+    nextTurnBtn.click();            // triggers the button normally
+  }
+});
+
+
 //event listeners from Harrys drag code:
 shipsContainer.addEventListener("mousedown", (e) => {
   grabShip(e, target);

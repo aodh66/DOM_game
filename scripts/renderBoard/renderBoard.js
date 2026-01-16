@@ -54,9 +54,9 @@ const turnTitle = (turnManager) => {
     //create title for board based on which players turn
     const heading = document.createElement('h2')
     if (turnManager.player()) {
-        heading.textContent = `Computer turn`
+        heading.textContent = `C o m p u t e r   t u r n`
     } else {
-        heading.textContent = `Your turn`
+        heading.textContent = `Y o u r   t u r n`
     }
     return heading;
 }

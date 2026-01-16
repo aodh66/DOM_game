@@ -34,7 +34,6 @@ export class GridManager {
     }
 
     //set up the board with a total number of squares - must be equal sizes
-
     //gridsize doesn't work as css grid layout would need updating to match
     setupBoard(gridsize = 10) {
         //Make the grids named by row and column as a grid layout
@@ -42,17 +41,14 @@ export class GridManager {
         for (let i = 0; i < gridsize; i++) {
             //letters 
             for (let j = 65; j < 65 + gridsize; j++) {
-
                 //combine to make grid reference
                 const id = String(i) + String.fromCharCode(j)
-                // console.log(id)
 
                 //create a grid square with this ID.
                 this.createGridSquare(id)
             }
         }
     }
-
 
     //read
     getGridSquareByID(id) {
